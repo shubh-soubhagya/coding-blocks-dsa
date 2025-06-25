@@ -1,4 +1,5 @@
 package day2;
+import java.util.*;
 
 public class star_pattern {
     public static void main(String[] args) {
@@ -15,8 +16,12 @@ public class star_pattern {
         // }
 
 
+        
+        Scanner sc = new Scanner(System.in);
+        int row = sc.nextInt();
         int i=0;
-        while(i<4){
+
+        while(i<row){
             int j=0;
             while(j<=i){
                 System.out.print(" * ");
