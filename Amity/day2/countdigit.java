@@ -14,9 +14,11 @@ public class countdigit {
             num = num/10;
             cnt++;
             // System.out.print(cnt);
+
             
         }
         System.out.print(cnt);
+       
 
 
     }
