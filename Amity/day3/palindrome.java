@@ -8,6 +8,7 @@ public class palindrome {
 
 
         Scanner sc = new Scanner(System.in);
+        System.out.print("Number: ");
         int num = sc.nextInt();
         int original = num;
 

@@ -33,6 +33,6 @@ public class boston {
             temp = temp / 10;
         }
 
-        System.out.println(digitsum == factsum ? "Boston" : "bhak pagal");
+        System.out.println(digitsum == factsum ? "Boston Number" : "Not Boston Number");
     }
 }
