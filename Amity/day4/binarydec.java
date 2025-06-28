@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class binarydec {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your number: ");
         int n = sc.nextInt(); // Binary number as integer input (e.g., 1011)
 
         int sum = 0;
