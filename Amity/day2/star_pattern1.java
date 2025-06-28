@@ -1,7 +1,7 @@
 package day2;
 import java.util.*;
 
-public class star_pattern {
+public class star_pattern1 {
     public static void main(String[] args) {
         // int i = 0;
 
@@ -52,7 +52,7 @@ public class star_pattern {
 
         //     System.out.println();  // go to next line
         //     i++;
-        //}
+        // }
 
 
         int i = 4;
@@ -67,7 +67,6 @@ public class star_pattern {
             i--;
         }
 
- 
         
     }
 }
