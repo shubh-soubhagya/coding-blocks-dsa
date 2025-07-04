@@ -1,5 +1,3 @@
-
-
 public class hcf {
 
     public static void main(String[] args){
