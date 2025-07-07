@@ -5,7 +5,6 @@ public class printswap {
         int m = a[0].length;
         for (int i =0; i<m; i++){
             for(int j=0; j<n; j++){
-                // a[i][j] = a[j][i];
                 System.out.print(a[j][i]+" ");
             }
         }
