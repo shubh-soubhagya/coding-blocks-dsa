@@ -1,18 +1,21 @@
 public class generate_paranthesis {
     public static void main(String[] args) {
-        int n =3;
-        generate("",0,0,n);
+        int n =4;
+        int total = generate("",0,0,n);
+        System.out.println("Total: "+total);
     }
-    public static void generate(String ans, int o, int c, int n){
+    public static int generate(String ans, int o, int c, int n){
         if(o==n && c==n){
             System.out.println(ans);
-            return;
+            return 1;
         }
+        int open =0, close =0;
         if(o<n){
-            generate(ans+"(", o+1, c, n);
+            open = generate(ans+"(", o+1, c, n);
         }
         if(o>c){
-            generate(ans+")", o, c+1, n);
+            close = generate(ans+")", o, c+1, n);
         }
+        return open+close;
     }
 }
