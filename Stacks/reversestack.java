@@ -1,28 +1,33 @@
 
 public class reversestack {
-    public static void main(String[] args) throws Exception{
-        stack s = new stack();
-        s.push(1);
-        s.push(2);
-        s.push(3);
-        s.push(4);
-        Rev(s);
-        s.Display();
-    }
-    public static void Rev(stack s) throws Exception{
-        if(s.isEmpty()) return;
-        int x = s.pop();
-        Rev(s);
-        Insert(x,s);
-    }
-    public static void Insert(int x, stack s){
-        if(s.isEmpty()){
-            s.push(x);
-            return; 
-        }
-        int remove = s.pop();
-        Insert(x,s);
-        s.push(remove);
-    }
+	public static void main(String []args)throws Exception {
+		 stack st = new stack();
+		
+		 st.push(5);
+		 st.push(10);
+		 st.push(15);
+		 st.push(20);
+		 st.Display();
+		 
+		 rev(st);
+         System.out.println();
+		 st.Display();
+	}	
+	//------------------------------------------------------------------------------------------------------------------------------------
+	public static void rev(stack st)throws Exception {
+		if(st.isEmpty()) return;
+		int x = st.pop();
+		rev(st);
+		Insert(x,st);
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------
+	public static void Insert(int x , stack st) throws Exception{
+		if(st.isEmpty()) {
+			st.push(x);
+			return;
+	}
+		int remove =st.pop();
+		Insert(x, st);
+		st.push(remove);
+	}
 }
-
